@@ -11,18 +11,18 @@ This data was sourced from baseballreference.com as a CSV file in order to easil
 
 ## Dataset:
 The dataset includes information about MLB team metrics including:
-* Time Stamp
-* Platform
-* Milliseconds Played
-* Country Streamed
-* IP Address
-* Track Name
-* Artist Name
-* Album Name
-* Album Name
-* Spotify Track URI
-* Reason Start
-* Reason end
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
 
 ## Lessons Learned:
 
