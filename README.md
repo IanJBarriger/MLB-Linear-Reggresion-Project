@@ -1,4 +1,4 @@
-# MLBLinearReggresion
+# MLB Linear Reggresion
 
 This project used data sourced from baseballreference.com from the years , with the goal to predict season win percentage based on various team statistics. This was a group project consisting of data collection, cleaning, exploratory data analysis, model creation, and model testing. 
 
