@@ -11,7 +11,7 @@ This project uses team-level Major League Baseball (MLB) statistics (2000–2015
 
 **Tech used:** 
 * R Studio
-* * R Packages: car, MASS, olsrr, Metrics
+  * R Packages: car, MASS, olsrr, Metrics
 
 ## Dataset:
 * Source: Baseball Reference
@@ -59,5 +59,5 @@ The final model revealed the following:
 * Visualize results with an interactive dashboard
 
 ## Citation
-Data Provided by Baseball Reference
+Data Provided by [Baseball Reference](https://www.baseball-reference.com/)
 
