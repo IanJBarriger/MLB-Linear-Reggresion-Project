@@ -1,32 +1,63 @@
-# MLB Linear Reggresion Project
+# MLB Win Percentage Prediction Using Linear Regression
 
-This project used data sourced from baseballreference.com from the years , with the goal to predict season win percentage based on various team statistics. This project consists of data collection, cleaning, exploratory data analysis, model creation, and model testing. 
+This project uses team-level Major League Baseball (MLB) statistics (2000–2015) to build a predictive model for team win percentage. The project involved data collection, exploratory data analysis (EDA), multicollinearity diagnostics, and linear regression modeling, culminating in a refined model that identifies key performance indicators contributing to team success.
 
-## How It's Made:
+## What This Project Covers:
+* Data Collection & Cleaning: Official MLB team statistics from 2000–2015, sourced via Baseball Reference.
+* Exploratory Data Analysis: Visualized trends, checked for linearity, and explored variable relationships.
+* Modeling: Created a full linear regression model, addressed multicollinearity, and selected variables using backward selection.
+* Model Diagnostics: Evaluated assumptions of linear regression and confirmed model reliability using R², BIC, and Mallow’s Cp.
+* Final Output: A reliable regression model that predicts win percentage using key metrics like Runs (R), ERA, Errors (E), and Run Differential (RUNDIFF).
 
 **Tech used:** 
 * R Studio
-
-This data was sourced from baseballreference.com as a CSV file in order to easily import it as a table in R Studio. Using Pandas and Numpy, the data was cleaned by removing missing values, correcting data types, and determining qualifying streams. This cleaned data frame wsa used to analyze listening habits, including Top Artist, Top Songs, time related habits, and total listening times. Key insights were visualized using Tableau where an interactive dashboard was created to show streaming rates for my top 10 artists. These visualizations were important in highlighting and improving accessability, presentation and enabling clear insights into listening behaviors and preferences.
+* * R Packages: car, MASS, olsrr, Metrics
 
 ## Dataset:
-The dataset includes information about MLB team metrics including:
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* Source: Baseball Reference
+* Years Covered: 2000–2015
+* Variables: 18 features, including offensive, defensive, and fielding stats.
+
+The dataset includes information about MLB team metrics, including:
+* yearID
+* leagueID
+* Wins
+* Runs
+* atBats
+* Hits
+* homeRuns
+* Walks
+* strikeOuts
+* stolenBases
+* runsAllowed
+* ERA
+* hitsAllowed
+* Errors
+* fieldingPercentage
+* runDifferential (1:Positive, 0:Negative)
+
+## Summary of Results:
+
+The final model revealed the following:
+* Positive contributors: Runs, Hits, Home Runs
+* Negative contributors: ERA, Errors
+* Run Differential played a key role and its interactions improved model precision
+* Adjusted R² and BIC showed the final model was more efficient than the full model
+    - Example insight: A 1-unit increase in Runs (R) increases expected win percentage by ~0.05%
+    - Conversely, a 1-unit increase in ERA decreases win percentage by ~0.1%
 
 ## Lessons Learned:
+* Developed practical skills in building regression models with real-world data.
+* Improved understanding of multicollinearity and interaction effects.
+* Gained hands-on experience with model diagnostics and refinement.
+* Learned how to translate statistical findings into actionable insights for domain experts.
 
-* Gained proficiency and knowledge in data cleaning techniques using Pandas and Numpy.
-* Improved skills in data visualization using Tableau.
-* Developed strategies for collecting and produsing a product using a specialized data set.
-* Gained knowlege in creating storytelling and presentation through a tablea dashboard.
+## Future Improvements:
+* Incorporate more recent seasons (post 2015)
+* Test non-linear models or tree-based regressors (Random Forest)
+* Explore advanced baseball metrics (e.g., WAR, OBP, SLG)
+* Visualize results with an interactive dashboard
+
+## Citation
+Data Provided by Baseball Reference
+
